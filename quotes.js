@@ -28,7 +28,7 @@ module.exports = [
     "There is only one bad word: taxes.",
     "History began July 4th, 1776. Anything before that was a mistake.",
     "Cultivating a manly musk puts opponent on notice.",
-    "Give a man a fish and feed him for a day. Don’t teach a man to fish…and feed yourself. He’s a grown man. And fishing’s not that hard.",
+    "Give a man a fish and feed him for a day. Don’t teach a man to fish… and feed yourself. He’s a grown man. And fishing’s not that hard.",
     "Child labor laws are ruining this country.",
     "Great job, everyone. The reception will be held in each of our individual houses, alone.",
     "America: The only country that matters. If you want to experience other ‘cultures,’ use an atlas or a ham radio.",
