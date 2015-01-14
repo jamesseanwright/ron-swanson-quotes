@@ -3,7 +3,7 @@
 var express = require('express');
 var quotes = require('./quotes');
 var app = express();
-var port = process.env.SWANSON_PORT || 3000;
+var port = process.env.PORT || 3000;
 
 app.get('/quotes', function (req, res) {
 	var quote = quotes[Math.floor(Math.random() * quotes.length)];
