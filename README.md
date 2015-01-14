@@ -10,4 +10,4 @@ Returns a random quote in this format:
 ```
 
 ## Production host
-Coming momentarily
+[http://ron-swanson-quotes.herokuapp.com/quotes](http://ron-swanson-quotes.herokuapp.com/quotes)
