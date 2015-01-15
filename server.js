@@ -7,6 +7,7 @@ var port = process.env.PORT || 3000;
 
 app.get('/quotes', function (req, res) {
 	var quote = quotes[Math.floor(Math.random() * quotes.length)];
+	res.set('Access-Control-Allow-Origin', '*');
 	res.json({quote: quote});
 });
 
