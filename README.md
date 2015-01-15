@@ -11,3 +11,4 @@ Returns a random quote in this format:
 
 ## Production host
 [http://ron-swanson-quotes.herokuapp.com/quotes](http://ron-swanson-quotes.herokuapp.com/quotes)
+The `Access-Control-Allow-Origin` header is set to `*` so that you can make requests from any domain.
