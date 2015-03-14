@@ -15,4 +15,4 @@ Returns a random quote in this format:
 The `Access-Control-Allow-Origin` header is set to `*` so that you can make requests from any domain.
 
 ## JavaScript demo
-[http://jsfiddle.net/jamesseanwright/7g2w4dhc/2/](JSFiddle) (requires a browser with support for promises and generators.)
+[JSFiddle](http://jsfiddle.net/jamesseanwright/7g2w4dhc/2/) (requires a browser with support for promises and generators.)
