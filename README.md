@@ -13,3 +13,6 @@ Returns a random quote in this format:
 [http://ron-swanson-quotes.herokuapp.com/quotes](http://ron-swanson-quotes.herokuapp.com/quotes)
 
 The `Access-Control-Allow-Origin` header is set to `*` so that you can make requests from any domain.
+
+## JavaScript demo
+[http://jsfiddle.net/jamesseanwright/7g2w4dhc/2/](JSFiddle) (requires a browser with support for promises and generators.)
