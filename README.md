@@ -18,4 +18,4 @@ The `Access-Control-Allow-Origin` header is set to `*` so that you can make requ
 [JSFiddle](http://jsfiddle.net/jamesseanwright/7g2w4dhc/2/) (requires a browser with support for promises and generators.)
 
 ## Hubot integration
-I wrote a plugin that can be installed via npm. See the [repo](https://github.com/jamesseanwright/hubot-swanson) for more details.
+I wrote a Hubot script that can be installed via npm. See the [repo](https://github.com/jamesseanwright/hubot-swanson) for more details.
