@@ -1,14 +1,13 @@
 'use strict';
 
 var express = require('express');
-var quotes = require('./quotes');
+var quotesRepository = require('./quotesRepository');
 var app = express();
 var port = process.env.PORT || 3000;
 
 app.get('/quotes', function (req, res) {
-	var quote = quotes[Math.floor(Math.random() * quotes.length)];
 	res.set('Access-Control-Allow-Origin', '*');
-	res.json({quote: quote});
+	res.json({ quote: quotesRepository.getRandom() });
 });
 
 app.listen(port, function () {
