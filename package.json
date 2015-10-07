@@ -1,6 +1,6 @@
 {
   "name": "ron-swanson-quotes",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "An API for retrieving Ron Swanson quotes",
   "repository": {
     "type": "git",
