@@ -7,16 +7,16 @@ Because Ron Swanson is a hero. Just a ridiculously simple Node server.
 Returns a random quote in this format:
 ```
 [
-{ quote: "Capitalism: God’s way of determining who is smart and who is poor." }
+	{ quote: "Capitalism: God’s way of determining who is smart and who is poor." }
 ]
 ```
 ### `GET /quotes/X`
 Returns X number of random quotes in this format:
 ```
 [
-{ quote: "Capitalism: God’s way of determining who is smart and who is poor." },
-{ quote: "History began July 4th, 1776. Anything before that was a mistake." },
+	{ quote: "Capitalism: God’s way of determining who is smart and who is poor." },
 	...
+	{ quote: "History began July 4th, 1776. Anything before that was a mistake." }
 ]
 ```
 
