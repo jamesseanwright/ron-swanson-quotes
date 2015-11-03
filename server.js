@@ -5,14 +5,21 @@ var quotesRepository = require('./quotesRepository');
 var app = express();
 var port = process.env.PORT || 3000;
 
-app.get('/quotes', function (req, res) {
+app.all('*', function (req, res, next) {
 	res.set('Access-Control-Allow-Origin', '*');
-	res.send(quotesRepository.getRandom(1));
+	next();
 });
 
-app.get('/quotes/:num', function (req, res) {
-	res.set('Access-Control-Allow-Origin', '*');
-	res.send(quotesRepository.getRandom(req.params.num));
+/* Legacy endpoint. Deprecated as of version 1.5.
+ * The new response format served by /v2 will become
+ * the new response for this endpoint in version 2. */
+app.get('/quotes', function (req, res) {
+	var quote = quotesRepository.getRandom(1)[0];
+	res.send(quote);
+});
+
+app.get('/v2/quotes/:num?', function (req, res) {
+	res.send(quotesRepository.getRandom(req.params.num || 1));
 });
 
 app.listen(port, function () {

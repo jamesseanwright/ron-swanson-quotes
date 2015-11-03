@@ -3,7 +3,13 @@ Because Ron Swanson is a hero. Just a ridiculously simple Node server.
 
 ## APIs
 
-### `GET /quotes`
+### ~~`GET /quotes`~~ Deprecated as of version 1.5, will be removed in version 2!
+Returns a random quote in this format:
+```
+	{ quote: "Capitalism: God’s way of determining who is smart and who is poor." }
+```
+
+### `GET /v2/quotes`
 Returns a random quote in this format:
 ```
 [
@@ -11,12 +17,11 @@ Returns a random quote in this format:
 ]
 ```
 
-### `GET /quotes/X`
-Returns X random quotes in this format:
+### `GET /v2/quotes/<count>`
+Returns <count> random quotes in the same format format. E.g. GET /quotes/2
 ```
 [
 	{ quote: "Capitalism: God’s way of determining who is smart and who is poor." },
-	...
 	{ quote: "Clear alcohols are for rich women on diets." }
 ]
 ```
