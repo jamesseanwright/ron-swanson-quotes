@@ -18,7 +18,7 @@ Returns a random quote in this format:
 ```
 
 ### `GET /v2/quotes/<count>`
-Returns <count> random quotes in the same format format. E.g. GET /quotes/2
+Returns &lt;count&gt; random quotes in the same format format. E.g. GET /quotes/2
 ```
 [
 	{ quote: "Capitalism: God’s way of determining who is smart and who is poor." },
