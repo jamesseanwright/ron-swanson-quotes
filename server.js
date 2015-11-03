@@ -15,7 +15,7 @@ app.all('*', function (req, res, next) {
  * the new response for this endpoint in version 2. */
 app.get('/quotes', function (req, res) {
 	var quote = quotesRepository.getRandom(1)[0];
-	res.send(quote);
+	res.send({ quote: quote });
 });
 
 app.get('/v2/quotes/:num?', function (req, res) {

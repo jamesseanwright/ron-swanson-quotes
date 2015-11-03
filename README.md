@@ -10,19 +10,19 @@ Returns a random quote in this format:
 ```
 
 ### `GET /v2/quotes`
-Returns a random quote in this format:
+Returns an array with one quote:
 ```
 [
-	{ quote: "Capitalism: God’s way of determining who is smart and who is poor." }
+	"Capitalism: God’s way of determining who is smart and who is poor." }
 ]
 ```
 
 ### `GET /v2/quotes/<count>`
-Returns `<count>` random quotes in the same format format. E.g. GET /quotes/2
+Returns an array with `<count>` quotes e.g. `GET /quotes/2`
 ```
 [
-	{ quote: "Capitalism: God’s way of determining who is smart and who is poor." },
-	{ quote: "Clear alcohols are for rich women on diets." }
+	"Capitalism: God’s way of determining who is smart and who is poor." },
+	"Clear alcohols are for rich women on diets." }
 ]
 ```
 
