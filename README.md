@@ -13,7 +13,7 @@ Returns a random quote in this format:
 Returns an array with one quote:
 ```
 [
-	"Capitalism: God’s way of determining who is smart and who is poor." }
+	"Capitalism: God’s way of determining who is smart and who is poor."
 ]
 ```
 
@@ -21,13 +21,13 @@ Returns an array with one quote:
 Returns an array with `<count>` quotes e.g. `GET /quotes/2`
 ```
 [
-	"Capitalism: God’s way of determining who is smart and who is poor." },
-	"Clear alcohols are for rich women on diets." }
+	"Capitalism: God’s way of determining who is smart and who is poor.",
+	"Clear alcohols are for rich women on diets."
 ]
 ```
 
 ## Production host
-[http://ron-swanson-quotes.herokuapp.com/quotes](http://ron-swanson-quotes.herokuapp.com/quotes)
+[http://ron-swanson-quotes.herokuapp.com/v2/quotes](http://ron-swanson-quotes.herokuapp.com/v2/quotes)
 
 The `Access-Control-Allow-Origin` header is set to `*` so that you can make requests from any domain.
 
