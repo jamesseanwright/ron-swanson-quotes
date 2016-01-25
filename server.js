@@ -10,14 +10,6 @@ app.all('*', function (req, res, next) {
 	next();
 });
 
-/* Legacy endpoint. Deprecated as of version 1.5.
- * The new response format served by /v2 will become
- * the new response for this endpoint in version 2. */
-app.get('/quotes', function (req, res) {
-	var quote = quotesRepository.getRandom(1)[0];
-	res.send({ quote: quote });
-});
-
 app.get('/v2/quotes/:num?', function (req, res) {
 	res.send(quotesRepository.getRandom(req.params.num || 1));
 });
