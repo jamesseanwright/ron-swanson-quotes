@@ -1,6 +1,11 @@
 # Ron Swanson quotes API
 Because Ron Swanson is a hero. Just a ridiculously simple Node server.
 
+## Production host
+[http://ron-swanson-quotes.herokuapp.com/v2/quotes](http://ron-swanson-quotes.herokuapp.com/v2/quotes)
+
+The `Access-Control-Allow-Origin` header is set to `*` so that you can make requests from any domain.
+
 ## APIs
 
 ### `GET /v2/quotes`
@@ -19,11 +24,6 @@ Returns an array with `<count>` quotes e.g. `GET /quotes/2`
 	"Clear alcohols are for rich women on diets."
 ]
 ```
-
-## Production host
-[http://ron-swanson-quotes.herokuapp.com/v2/quotes](http://ron-swanson-quotes.herokuapp.com/v2/quotes)
-
-The `Access-Control-Allow-Origin` header is set to `*` so that you can make requests from any domain.
 
 ## JavaScript demo
 [JSFiddle](http://jsfiddle.net/jamesseanwright/7g2w4dhc/2/) (requires a browser with support for promises and generators.)
