@@ -26,7 +26,7 @@ Returns an array with `<count>` quotes e.g. `GET /quotes/2`
 ```
 
 ## JavaScript demo
-[JSFiddle](http://jsfiddle.net/jamesseanwright/7g2w4dhc/2/) (requires a browser with support for promises and generators.)
+[JSFiddle](http://jsfiddle.net/7g2w4dhc/27/) (requires a browser with support for `Promise`s, ES6, `fetch`, and generator functions.)
 
 ## Hubot integration
 I wrote a Hubot script that can be installed via npm. See the [repo](https://github.com/jamesseanwright/hubot-swanson) for more details.
