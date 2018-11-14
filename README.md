@@ -1,6 +1,6 @@
 # Ron Swanson quotes API
 
-Because Ron Swanson is a hero. Just a ridiculously simple Node server.
+Because Ron Swanson is a hero. Just a ridiculously simple Node.js server.
 
 ## Production host
 
