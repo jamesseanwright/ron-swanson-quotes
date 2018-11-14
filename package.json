@@ -1,6 +1,6 @@
 {
   "name": "ron-swanson-quotes",
-  "version": "2.0.0",
+  "version": "2.1.0",
   "description": "An API for retrieving Ron Swanson quotes",
   "repository": {
     "type": "git",
@@ -14,15 +14,18 @@
     "recreation"
   ],
   "author": "James Wright",
-  "license": "None",
+  "license": "Apache 2.0",
   "bugs": {
     "url": "https://github.com/jamesseanwright/ron-swanson-quotes/issues"
   },
   "homepage": "https://github.com/jamesseanwright/ron-swanson-quotes",
+  "scripts": {
+    "start": "node server.js"
+  },
   "dependencies": {
-    "express": "^4.11.0"
+    "express": "4.11.0"
   },
   "engines": {
-    "node": "4.x.x"
+    "node": "8.x.x"
   }
 }

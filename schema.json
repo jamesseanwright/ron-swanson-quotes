@@ -1,0 +1,64 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "version": "1.0.0",
+        "title": "Ron Swanson Quotes",
+        "description": "A HTTP API for retrieving Ron Swanson Quotes",
+        "contact": {
+            "name": "James Wright",
+            "email": "james@jamesswright.co.uk",
+            "url": "https://jamesswright.co.uk"
+        },
+        "license": {
+            "name": "Apache 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        }
+    },
+    "host": "ron-swanson-quotes.herokuapp.com",
+    "basePath": "/v2",
+    "schemes": [
+        "https"
+    ],
+    "paths": {
+        "/quotes": {
+            "$ref": "#/definitions/quoteRequest"
+        },
+        "/quotes/{count}": {
+            "$ref": "#/definitions/quoteRequest",
+            "parameters": [
+                {
+                    "name": "count",
+                    "in": "path",
+                    "required": true
+                }
+            ]
+        }
+    },
+    "definitions": {
+        "quoteRequest": {
+            "tags": [
+                "Ron Swanson Quote"
+            ],
+            "summary": "Ron Swanson Quote",
+            "description": "Returns a Ron Swanson Quote.",
+            "operationId": "RonSwansonQuote",
+            "consumes": [
+                "application/json"
+            ],
+            "produces": [
+                "application/json"
+            ],
+            "responses": {
+                "200": {
+                    "description": "Successful request",
+                    "schema": {
+                        "type": "array",
+                        "items": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
