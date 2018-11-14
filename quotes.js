@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 
 module.exports = [
     "Clear alcohols are for rich women on diets.",

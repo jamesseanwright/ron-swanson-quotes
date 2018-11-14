@@ -1,19 +1,19 @@
-'use strict';
+"use strict";
 
-var express = require('express');
-var quotesRepository = require('./quotesRepository');
-var app = express();
-var port = process.env.PORT || 3000;
+const express = require("express");
+const getRandomQuotes = require("./getRandomQuotes");
+const app = express();
+const port = process.env.PORT || 3000;
 
-app.all('*', function (req, res, next) {
-	res.set('Access-Control-Allow-Origin', '*');
-	next();
+app.all("*", (req, res, next) => {
+    res.set("Access-Control-Allow-Origin", "*");
+    next();
 });
 
-app.get('/v2/quotes/:num?', function (req, res) {
-	res.send(quotesRepository.getRandom(req.params.num || 1));
+app.get("/v2/quotes/:num?", (req, res) => {
+    res.send(getRandomQuotes(parseInt(req.params.num, 10) || 1));
 });
 
-app.listen(port, function () {
-	console.log('Server running on port', port);
-})
+app.listen(port, () => {
+    console.log("Server running on port", port);
+});
