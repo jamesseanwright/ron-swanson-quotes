@@ -2,6 +2,8 @@
 
 const express = require("express");
 const getRandomQuotes = require("./getRandomQuotes");
+const schema = require('./schema.json');
+
 const app = express();
 const port = process.env.PORT || 3000;
 
@@ -12,6 +14,10 @@ app.all("*", (req, res, next) => {
 
 app.get("/v2/quotes/:num?", (req, res) => {
     res.send(getRandomQuotes(parseInt(req.params.num, 10) || 1));
+});
+
+app.get('/v2/schema', (req, res) => {
+    res.json(schema);
 });
 
 app.listen(port, () => {

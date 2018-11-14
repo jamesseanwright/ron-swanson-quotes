@@ -31,6 +31,10 @@ Returns an array with `<count>` quotes e.g. `GET /quotes/2`
 ]
 ```
 
+## OpenAPI 3 Schema
+
+An [OpenAPI](https://swagger.io/docs/specification/about/) 3 schema is available at `/v2/schema`. Thanks to [Chris Gali](https://github.com/chrisgali01) for the suggestion and the initial draft.
+
 ## JavaScript demo
 
 [JSFiddle](http://jsfiddle.net/7g2w4dhc/27/) (requires a browser with support for `Promise`s, ES6, `fetch`, and generator functions.)

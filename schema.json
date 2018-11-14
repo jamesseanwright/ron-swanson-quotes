@@ -1,9 +1,9 @@
 {
-    "swagger": "2.0",
+    "openapi": "3.0.0",
     "info": {
-        "version": "1.0.0",
         "title": "Ron Swanson Quotes",
-        "description": "A HTTP API for retrieving Ron Swanson Quotes",
+        "version": "1.0.0",
+        "description": "A HTTP API for retrieving Ron Swanson quotes",
         "contact": {
             "name": "James Wright",
             "email": "james@jamesswright.co.uk",
@@ -14,47 +14,54 @@
             "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
         }
     },
-    "host": "ron-swanson-quotes.herokuapp.com",
-    "basePath": "/v2",
-    "schemes": [
-        "https"
+    "servers": [
+        {
+            "url": "https://ron-swanson-quotes.herokuapp.com/v2"
+        }
     ],
     "paths": {
         "/quotes": {
-            "$ref": "#/definitions/quoteRequest"
+            "get": {
+                "description": "Returns a single Ron Swanson quote wrapped in an array",
+                "responses": {
+                    "200": {
+                        "$ref": "#/components/responses/success"
+                    }
+                }
+            }
         },
         "/quotes/{count}": {
-            "$ref": "#/definitions/quoteRequest",
-            "parameters": [
-                {
-                    "name": "count",
-                    "in": "path",
-                    "required": true
-                }
-            ]
+            "get": {
+                "description": "Returns {count} quotes in an array",
+                "responses": {
+                    "200": {
+                        "$ref": "#/components/responses/success"
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "count",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "integer"
+                        }
+                    }
+                ]
+            }
         }
     },
-    "definitions": {
-        "quoteRequest": {
-            "tags": [
-                "Ron Swanson Quote"
-            ],
-            "summary": "Ron Swanson Quote",
-            "description": "Returns a Ron Swanson Quote.",
-            "operationId": "RonSwansonQuote",
-            "consumes": [
-                "application/json"
-            ],
-            "produces": [
-                "application/json"
-            ],
-            "responses": {
-                "200": {
-                    "description": "Successful request",
-                    "schema": {
-                        "type": "array",
-                        "items": {
-                            "type": "string"
+    "components": {
+        "responses": {
+            "success": {
+                "description": "OK",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
                         }
                     }
                 }
