@@ -4,7 +4,7 @@ Because Ron Swanson is a hero. Just a ridiculously simple Node.js server.
 
 ## Production host
 
-[http://ron-swanson-quotes.herokuapp.com/v2/quotes](http://ron-swanson-quotes.herokuapp.com/v2/quotes)
+[https://ron-swanson-quotes.herokuapp.com/v2/quotes](http://ron-swanson-quotes.herokuapp.com/v2/quotes)
 
 The `Access-Control-Allow-Origin` header is set to `*` so that you can make requests from any domain.
 
