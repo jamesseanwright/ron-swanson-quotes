@@ -15,14 +15,10 @@ const appendRandomQuote = currentQuotes => {
         ];
 };
 
-const getRandomQuotes = numberOfQuotes => {
-    const hasRequestedTooMany = numberOfQuotes > quotes.length;
-    const count = hasRequestedTooMany ? quotes.length : numberOfQuotes;
-
-    return range(count).reduce(
+const getRandomQuotes = quoteCount =>
+    range(Math.min(quoteCount, quotes.length)).reduce(
         out => appendRandomQuote(out),
         [],
     );
-};
 
 module.exports = getRandomQuotes;
