@@ -63,6 +63,5 @@ module.exports = [
     "Dear frozen yogurt, you are the celery of desserts. Be ice cream or be nothing. Zero stars.",
     "There has never been a sadness that can’t been cured by breakfast food.",
     "If any of you need anything at all, too bad. Deal with your problems yourselves, like adults.",
-    "It’s pointless for a human to paint scenes of nature when they can go outside and stand in it.",
-    
+    "It’s pointless for a human to paint scenes of nature when they can go outside and stand in it."  
 ];
