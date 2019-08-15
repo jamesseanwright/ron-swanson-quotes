@@ -58,5 +58,10 @@ module.exports = [
     "What's cholesterol?",
     "People who buy things are suckers.",
     "I'm going to get 12 eggs and part of a dead animal. Dealer's choice. Please and thank you.",
-    "I wanna punch you in the face so bad right now."
+    "I wanna punch you in the face so bad right now.",
+    "Normally, if given the choice between doing something and nothing, I’d choose to do nothing. But I will do something if it helps someone else do nothing. I’d work all night, if it meant nothing got done.",
+    "Dear frozen yogurt, you are the celery of desserts. Be ice cream or be nothing. Zero stars.",
+    "There has never been a sadness that can’t been cured by breakfast food.",
+    "If any of you need anything at all, too bad. Deal with your problems yourselves, like adults.",
+    "It’s pointless for a human to paint scenes of nature when they can go outside and stand in it."  
 ];
