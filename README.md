@@ -31,6 +31,17 @@ Returns an array with `<count>` quotes e.g. `GET /quotes/2`
 ]
 ```
 
+### `GET /v2/quotes/search/<term>`
+
+Returns an array of quotes matching `<term>` without case sensitivity e.g. `GET /quotes/search/hate`
+
+```json
+[
+    "There's only one thing I hate more than lying: skim milk. Which is water that's lying about being milk.",
+    "I hate everything."
+]
+```
+
 ## OpenAPI 3 Schema
 
 An [OpenAPI](https://swagger.io/docs/specification/about/) 3 schema is available at `/v2/schema`. Thanks to [Chris Gali](https://github.com/chrisgali01) for the suggestion and the initial draft.
