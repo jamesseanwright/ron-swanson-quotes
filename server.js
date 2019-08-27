@@ -2,6 +2,7 @@
 
 const express = require("express");
 const getRandomQuotes = require("./getRandomQuotes");
+const searchQuotes = require("./searchQuotes");
 const schema = require("./schema.json");
 
 const app = express();
@@ -20,6 +21,10 @@ app.all("*", (req, res, next) => {
     console.log(`${dateFormatter.format(new Date())} - request for ${req.path}`);
     res.set("Access-Control-Allow-Origin", "*");
     next();
+});
+
+app.get("/v2/quotes/search/:term", (req, res) => {
+    res.send(searchQuotes(req.params.term));
 });
 
 app.get("/v2/quotes/:num?", (req, res) => {
