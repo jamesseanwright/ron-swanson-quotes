@@ -49,6 +49,26 @@
                     }
                 ]
             }
+        },
+        "/quotes/search/{term}": {
+            "get": {
+                "description": "Returns an array of quotes matching {term} without case sensitivity",
+                "responses": {
+                    "200": {
+                        "$ref": "#/components/responses/success"
+                    }
+                },
+                "parameters": [
+                    {
+                        "name": "term",
+                        "in": "path",
+                        "required": true,
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                ]
+            }
         }
     },
     "components": {
