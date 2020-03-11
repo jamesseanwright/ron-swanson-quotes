@@ -1,6 +1,6 @@
 "use strict";
 
-module.exports = [
+export default [
     "Clear alcohols are for rich women on diets.",
     "Crying: acceptable at funerals and the Grand Canyon.",
     "I call this turf ‘n’ turf. It's a 16 oz T-bone and a 24 oz porterhouse. Also, whiskey and a cigar. I am going to consume all of this at the same time because I am a free American.",
@@ -63,5 +63,5 @@ module.exports = [
     "Dear frozen yogurt, you are the celery of desserts. Be ice cream or be nothing. Zero stars.",
     "There has never been a sadness that can’t been cured by breakfast food.",
     "If any of you need anything at all, too bad. Deal with your problems yourselves, like adults.",
-    "It’s pointless for a human to paint scenes of nature when they can go outside and stand in it."  
+    "It’s pointless for a human to paint scenes of nature when they can go outside and stand in it."
 ];

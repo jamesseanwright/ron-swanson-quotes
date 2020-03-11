@@ -1,12 +1,12 @@
 "use strict";
 
-const quotes = require("./quotes");
+import quotes from "./quotes";
 
-const searchQuotes = term => {
+const searchQuotes = (term: string) => {
     const regExp = new RegExp(term, 'i');
     return quotes.filter(quote =>
         quote.match(regExp)
     );
 };
 
-module.exports = searchQuotes;
+export default searchQuotes;

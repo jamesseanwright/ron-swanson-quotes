@@ -1,0 +1,16 @@
+{
+  "include": ["src"],
+  "compilerOptions": {
+    "allowJs": true,
+    "checkJs": false,
+    "outDir": "dist",
+    "strict": true,
+    "moduleResolution": "node",
+    "lib": ["es2020"],
+    "target": "ES6",
+    "module": "CommonJS",
+    "removeComments": true,
+    "allowSyntheticDefaultImports": true,
+    "resolveJsonModule": true
+  }
+}

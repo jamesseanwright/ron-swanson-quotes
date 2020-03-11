@@ -1,9 +1,9 @@
 "use strict";
 
-const express = require("express");
-const getRandomQuotes = require("./getRandomQuotes");
-const searchQuotes = require("./searchQuotes");
-const schema = require("./schema.json");
+import * as express from "express";
+import getRandomQuotes from "./getRandomQuotes";
+import searchQuotes from "./searchQuotes";
+import schema from "./schema.json";
 
 const app = express();
 const port = process.env.PORT || 3000;

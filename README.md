@@ -53,3 +53,12 @@ An [OpenAPI](https://swagger.io/docs/specification/about/) 3 schema is available
 ## Hubot integration
 
 I wrote a Hubot script that can be installed via npm. See the [repo](https://github.com/jamesseanwright/hubot-swanson) for more details.
+
+## Local development
+
+Once you've cloned this repo, run `npm i` to install the dependencies.
+
+Then you can run:
+
+* `npm run build`: builds the TypeScript source code
+* `npm start`: runs the compiled server

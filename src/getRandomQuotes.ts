@@ -1,10 +1,10 @@
 "use strict";
 
-const quotes = require("./quotes");
+import quotes from "./quotes";
 
-const range = count => Array(count).fill(null);
+const range = (count: number) => Array<number>(count).fill(1);
 
-const appendRandomQuote = currentQuotes => {
+const appendRandomQuote = (currentQuotes: string[]): string[] => {
     const quote = quotes[Math.floor(Math.random() * quotes.length)];
 
     return currentQuotes.includes(quote)
@@ -15,10 +15,10 @@ const appendRandomQuote = currentQuotes => {
         ];
 };
 
-const getRandomQuotes = quoteCount =>
+const getRandomQuotes = (quoteCount: number) =>
     range(Math.min(quoteCount, quotes.length)).reduce(
         out => appendRandomQuote(out),
-        [],
+        [] as string[],
     );
 
-module.exports = getRandomQuotes;
+export default getRandomQuotes;
