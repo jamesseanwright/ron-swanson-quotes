@@ -110,4 +110,4 @@ export default [
     "We have one activity planned: not getting killed.",
     "When I'm done eating a Mulligan's meal, for weeks afterwards, there are flecks of meat in my mustache. And I refuse to clean it because every now and then a piece of meat will fall into my mouth.",
     "Please and thank you."
-];
+] as const;
