@@ -61,4 +61,4 @@ Once you've cloned this repo, run `npm i` to install the dependencies.
 Then you can run:
 
 * `npm run build`: builds the TypeScript source code
-* `npm start`: runs the compiled server
+* `npm start`: runs the compiled server.
