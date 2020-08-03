@@ -70,7 +70,7 @@ export default [
     "If there were more food and fewer people, this would be a perfect party.",
     "Put some alcohol in your mouth to block with words from coming out.",
     "Give 100%. 110% is impossible. Only idiots recommend that.",
-    "Birthdays were invented by Hallmark to sell cards",
+    "Birthdays were invented by Hallmark to sell cards.",
     "Sting like a bee. Do not float like a butterfly. That’s ridiculous.",
     "My first ex-wife’s name is Tammy. My second ex-wife’s name is Tammy. My Mom’s name is Tamara…she goes by Tammy.",
     "Do you have any history of mental illness in your family? I have an uncle who does yoga.",
