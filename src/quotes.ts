@@ -102,7 +102,7 @@ export default [
     "First rule. No conversation lasts longer than 100 total words.",
     "I will leave my children $50 a piece. Enough for the cab ride home from the funeral and a steak dinner. End of discussion.",
     "The three most useless jobs in the world in order are: lawyer, congressman, and doctor.",
-    "I've had the same will since I was 8 years old. Upon my death, I will transfer all of my belongings to the man or animal who has killed me.",,
+    "I've had the same will since I was 8 years old. Upon my death, I will transfer all of my belongings to the man or animal who has killed me.",
     "Standard birth control methods are usually ineffective against a Swanson.",
     "I believe in cutting useless government projects. I also believe in cutting useful government projects.",
     "I've never been hungover. After I've had too much whiskey, I cook myself a large flank steak, pan fried and salted butter. I eat that, put on a pair of wet socks and go to sleep.",
