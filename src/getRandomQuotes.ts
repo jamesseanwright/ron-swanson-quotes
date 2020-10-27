@@ -5,7 +5,7 @@ import quotes from "./quotes";
 const range = (count: number) => Array<number>(count).fill(1);
 
 const appendRandomQuote = (currentQuotes: string[]): string[] => {
-    const quote = quotes[Math.floor(Math.random() * quotes.length)] || '';
+    const quote = quotes[Math.floor(Math.random() * quotes.length)];
 
     return currentQuotes.includes(quote)
         ? appendRandomQuote(currentQuotes)
