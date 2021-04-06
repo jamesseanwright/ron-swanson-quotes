@@ -109,5 +109,7 @@ export default [
     "Every two weeks I need to sand down my toe nails. They're too strong for clippers.",
     "We have one activity planned: not getting killed.",
     "When I'm done eating a Mulligan's meal, for weeks afterwards, there are flecks of meat in my mustache. And I refuse to clean it because every now and then a piece of meat will fall into my mouth.",
-    "Please and thank you."
+    "Please and thank you.",
+    "DISCIPLINE: The ability to repeat a boring thing over and over again.",
+    "YOU: You are your biggest ally."
 ] as const;
