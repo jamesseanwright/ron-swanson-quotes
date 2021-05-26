@@ -1,22 +1,28 @@
 import quotes from "./quotes";
 
-const range = (count: number) => Array<number>(count).fill(1);
+const randomUniqueRange = (count: number, max: number) => {
+    const traverse = (i: number, numbers: number[]): number[] => {
+        if (i === count) {
+            return numbers;
+        }
 
-const appendRandomQuote = (currentQuotes: string[]): string[] => {
-    const quote = quotes[Math.floor(Math.random() * quotes.length)];
+        const next = Math.floor(Math.random() * max);
 
-    return currentQuotes.includes(quote)
-        ? appendRandomQuote(currentQuotes)
-        : [
-            ...currentQuotes,
-            quote,
-        ];
+        if (numbers.includes(next)) {
+            return traverse(i, numbers);
+        }
+
+        numbers[i] = next;
+        return traverse(i + 1, numbers);
+    };
+
+    return traverse(0, Array<number>(count).fill(1));
 };
 
 const getRandomQuotes = (quoteCount: number) =>
-    range(Math.min(quoteCount, quotes.length)).reduce(
-        out => appendRandomQuote(out),
-        [] as string[],
-    );
+    randomUniqueRange(
+        Math.min(quoteCount, quotes.length - 1),
+        quotes.length,
+    ).map(x => quotes[x]);
 
 export default getRandomQuotes;
