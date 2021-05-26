@@ -1,5 +1,3 @@
-"use strict";
-
 import quotes from "./quotes";
 
 const range = (count: number) => Array<number>(count).fill(1);

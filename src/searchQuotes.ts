@@ -1,5 +1,3 @@
-"use strict";
-
 import quotes from "./quotes";
 
 const searchQuotes = (term: string) => {

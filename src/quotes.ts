@@ -1,5 +1,3 @@
-"use strict";
-
 export default [
     "Clear alcohols are for rich women on diets.",
     "Crying: acceptable at funerals and the Grand Canyon.",

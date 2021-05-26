@@ -1,5 +1,3 @@
-"use strict";
-
 import * as express from "express";
 import getRandomQuotes from "./getRandomQuotes";
 import searchQuotes from "./searchQuotes";
