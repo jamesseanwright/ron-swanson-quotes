@@ -1,10 +1,18 @@
 import * as express from "express";
+import * as rateLimit from 'express-rate-limit';
 import getRandomQuotes from "./getRandomQuotes";
 import searchQuotes from "./searchQuotes";
 import schema from "./schema.json";
 
+
 const app = express();
 const port = process.env.PORT || 3000;
+const requestLimiter = rateLimit({
+    windowMs: 2500, 
+    max: 10
+})
+
+app.use(requestLimiter)
 
 const dateFormatter = new Intl.DateTimeFormat("en-GB", {
     year: "numeric",
