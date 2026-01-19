@@ -1,5 +1,19 @@
 # Ron Swanson quotes API
 
+> ⚠️ **Archival notice**
+>
+> 19th January 2026
+>
+> Sadly, I have decided to archive this repository. This was an early project of mine to experiment with Node.js deployments to Heroku, and it's since gained a lot of usage across tutorials, bootcamp projects, Alexa skills, and more. In the 11 years since I launched the API, my personal life has massively changed and I thus no longer have the time to actively maintain it.
+>
+> It would be a shame for a useful educational resource to die entirely, so I'm at least happy to intervene if the current Heroku instance becomes unavailable; feel free to fire me an email using the address listed on my GitHub profile. Otherwise, no code changes will be made to the service henceforth.
+>
+> Thanks for all the support and utilisation!
+>
+> "On my death bed, my final wish is to have my ex-wives rushed to my side so I can use my dying breath to tell them both to go to Hell one last time." --Ron Swanson 
+
+---
+
 Because Ron Swanson is a hero. Just a ridiculously simple Node.js server.
 
 ## Production host
